@@ -1,0 +1,37 @@
+routes:
+  'cobra-uds':
+    queue: 'cobra.uds.consume'
+    vhost: 'ccc'
+    hosts:
+      - localhost
+    username: guest
+    password: guest
+    proto: amqp
+    port: 32776
+  'cirus':
+    queue: 'plow.incoming'
+    vhost: 'plow'
+    hosts:
+      - localhost
+    username: guest
+    password: guest
+    proto: amqp
+    port: 32776
+  'rollcall':
+    queue: 'rollcall.incoming'
+    vhost: rollcall
+    hosts:
+      - localhost
+    username: guest
+    password: guest
+    proto: amqp
+    port: 32776
+  'log':
+    queue: 'log.incoming'
+    vhost: hardware-log
+    hosts:
+      - localhost
+    username: guest
+    password: guest
+    proto: amqp
+    port: 32776
