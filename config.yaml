@@ -1,6 +1,6 @@
 routes:
   'cobra-uds':
-    queue: 'cobra.uds.consume'
+    queue: 'uds.consume'
     vhost: 'ccc'
     hosts:
       - localhost
@@ -8,7 +8,7 @@ routes:
     password: guest
     proto: amqp
     port: 32776
-  'cirus':
+  'plow':
     queue: 'plow.incoming'
     vhost: 'plow'
     hosts:
